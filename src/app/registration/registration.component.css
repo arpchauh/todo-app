@@ -1,0 +1,40 @@
+input {
+  margin: 15px;
+  background-color: #0a0a0a;
+  color: #6b6b6b;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  width: 570px;
+}
+.button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+::placeholder {
+  font-size: smaller;
+}
+button {
+  margin-top: 15px;
+  margin-left: 15px;
+  background-color: #1565c0;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px 10px 20px;
+  margin-right: 5px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.f1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dob {
+  width: 260px;
+}
+
+.mobile {
+  width: 260px;
+}

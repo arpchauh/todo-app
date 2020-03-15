@@ -1,0 +1,14 @@
+<input [(ngModel)]="email" type="text" placeholder="USERNAME" /><br />
+<input [(ngModel)]="password" type="text" placeholder="PASSWORD" />
+<div class="button">
+  <div>
+    <button (click)="onSubmit()">
+      LOGIN
+    </button>
+  </div>
+  <div>
+    <button [routerLink]="['/register']" routerLinkActive="router-link-active">
+      SIGNUP
+    </button>
+  </div>
+</div>

@@ -1,0 +1,41 @@
+<div>
+  <input [(ngModel)]="title" type="text" placeholder="Title" />
+</div>
+
+<div class="f1">
+  <div>
+    <input
+      [(ngModel)]="startDate"
+      class="dob"
+      type="date"
+      placeholder="Start Date"
+    />
+  </div>
+  <div>
+    <input
+      [(ngModel)]="endDate"
+      class="mobile"
+      type="date"
+      placeholder="Date of Completion"
+    />
+  </div>
+</div>
+
+<input
+  [(ngModel)]="shortDesc"
+  type="text"
+  placeholder="Short Description"
+/><br />
+<textarea
+  [(ngModel)]="desc"
+  rows="5"
+  cols="5"
+  name="description"
+  placeholder="Description"
+></textarea>
+<br />
+<div class="button">
+  <div>
+    <button (click)="onSubmit()">Submit</button>
+  </div>
+</div>

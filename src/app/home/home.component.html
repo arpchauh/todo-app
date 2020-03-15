@@ -1,0 +1,24 @@
+<div class="card-flex main" *ngIf="getTask">
+  <div class="card poppins" *ngFor="let item of getTask.data">
+    <div class="icon">
+      <div>
+        <p>{{ item.endDate | date: "mediumDate" }}</p>
+      </div>
+      <div>
+        <img class="icon1" src="../../assets/Group 19.png" alt="" />
+      </div>
+    </div>
+    <div
+      [ngStyle]="{ width: width + 'px', height: height + 'px' }"
+      class="title"
+      [routerLink]="['/update']"
+      [queryParams]="{ id: item._id }"
+    >
+      <h1 class="poppins">{{ item.title }}</h1>
+    </div>
+
+    <div class="btn">
+      <button (click)="deleteTask(item._id)" class="poppins">Delete</button>
+    </div>
+  </div>
+</div>

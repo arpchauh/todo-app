@@ -1,1 +1,7 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  background-color: #1b262c;
+  margin: 0;
+}
+.poppins {
+  font-family: "Poppins", sans-serif;
+}

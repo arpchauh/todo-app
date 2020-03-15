@@ -1,0 +1,87 @@
+.login {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-image: url("../../assets/Group 18.png");
+
+  height: 86vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation-fill-mode: backwards;
+  background-position-x: -19%;
+}
+
+.form {
+  background-color: #555454;
+  margin-top: 10%;
+  width: 45vw;
+  height: auto;
+  border-radius: 5px;
+  align-items: center;
+  margin-right: 5%;
+  padding: 1%;
+  transform: translateY(-17%);
+}
+
+input {
+  margin: 2vw;
+  background-color: #0a0a0a;
+  color: #6b6b6b;
+  border-radius: 5px;
+  border: none;
+  padding: 2vw;
+  width: 41vw;
+}
+.button {
+  display: flex;
+  justify-content: flex-start;
+}
+
+::placeholder {
+  font-size: smaller;
+}
+button {
+  margin-top: 15px;
+  margin-left: 15px;
+  background-color: #1565c0;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px 10px 20px;
+  margin-right: 5px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .login {
+    background-image: none;
+    justify-content: center;
+  }
+  input {
+    width: 302px;
+    justify-content: center;
+  }
+}
+@media (max-width: 767px) {
+  .login {
+    background-image: none;
+    justify-content: center;
+  }
+  input {
+    margin: 2vw;
+    width: 65vw;
+    padding: 4vw;
+    justify-content: center;
+  }
+
+  .form {
+    background-color: #555454;
+    width: 78vw;
+    height: auto;
+    margin-right: unset !important;
+    border-radius: 5px;
+    align-items: center;
+    padding: 1%;
+    justify-content: center !important;
+  }
+}

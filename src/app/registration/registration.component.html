@@ -1,0 +1,23 @@
+<input [(ngModel)]="fullName" type="text" placeholder="Full Name" /><br />
+<div class="f1">
+  <div>
+    <input [(ngModel)]="dob" class="dob" type="date" placeholder="DOB" />
+  </div>
+  <div>
+    <input
+      [(ngModel)]="mobileNo"
+      class="mobile"
+      type="text"
+      placeholder="Mobile No."
+    />
+  </div>
+</div>
+
+<input [(ngModel)]="email" type="text" placeholder="Email" /><br />
+<input [(ngModel)]="password" type="password" placeholder="Password" /><br />
+<input [(ngModel)]="password" type="password" placeholder="Confirm Password" />
+<div class="button">
+  <div>
+    <button (click)="onsubmit()">Submit</button>
+  </div>
+</div>
